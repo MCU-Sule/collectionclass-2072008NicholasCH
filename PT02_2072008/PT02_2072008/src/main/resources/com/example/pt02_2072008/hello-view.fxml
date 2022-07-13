@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.pt02_2072008.HelloController">
+   <left>
+      <VBox prefHeight="400.0" prefWidth="171.0" BorderPane.alignment="TOP_LEFT">
+         <children>
+            <Label text="Tambah Student Baru">
+               <VBox.margin>
+                  <Insets left="12.0" top="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Poppins Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label text="NRP: ">
+               <VBox.margin>
+                  <Insets left="5.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Poppins Regular" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="addNrp">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="Nama: ">
+               <VBox.margin>
+                  <Insets left="5.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Poppins Regular" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nama">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </TextField>
+            <Button mnemonicParsing="false" onAction="#addStudent" prefHeight="25.0" prefWidth="145.0" text="Tambah Student">
+               <VBox.margin>
+                  <Insets left="10.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Poppins Regular" size="12.0" />
+               </font>
+            </Button>
+            <Label text="Hapus Student">
+               <VBox.margin>
+                  <Insets left="35.0" top="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Poppins Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label text="NRP: ">
+               <VBox.margin>
+                  <Insets left="5.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Poppins Regular" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="delNrp">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </TextField>
+            <Button mnemonicParsing="false" onAction="#delStudent" prefHeight="25.0" prefWidth="145.0" text="Hapus Student">
+               <VBox.margin>
+                  <Insets left="10.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Poppins Regular" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tableStudent" prefHeight="400.0" prefWidth="429.0">
+              <columns>
+                <TableColumn fx:id="col1" prefWidth="75.0" text="C1" />
+                <TableColumn fx:id="col2" prefWidth="75.0" text="C2" />
+              </columns>
+            </TableView>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>

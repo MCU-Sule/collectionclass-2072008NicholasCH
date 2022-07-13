@@ -1,0 +1,38 @@
+2072008
+NicholasCH
+---------------------------
++    - means Question     +
++    * means Answer       +
+---------------------------
+
+- how to search for data with nrp
+* Pertama kita minta input data NRP lalu dengan menggunakan foreach kita cari dan mencocokan data NRP yang diinput dengan data yang ada pada list menggunakan if.
+
+- how to delete
+* Cara menghapus data dengan meneruskan cara mencari data dengan NRP selanjutnya kita periksa apakah data yang dicari dan ingin dihapus itu ada pada list atau tidak, jika ya maka data akan dihapus.
+
+- how to prevent error when no data deleted
+* Sebelum tidak ada data yang terhapus terjadi, saya memeriksa data yang diinput (baik itu null atau tidak) apakah ada yang sesuai dengan data yang ada di list atau tidak
+
+- how to show error when no data deleted
+* Ketika data yang dicari tidak ditemukan, maka tidak ada data yang dihapus, jika kita ingin menampilkannya pada program yang kita buat, maka saya akan menggunakan alert yang ada pada JavaFX untuk dapat menampilkan popup warning atau sebagainya atau kita juga bisa menampilkan tulisan pada system console.
+
+- how to add confirm box to make sure deletion
+* sama seperti menampilkan popup jika tidak ada data yang dihapus, kita bisa menambahkan alert untuk dapat memunculkan popup alert confirmation. 
+
+- how to know which data selected from table select
+* Jika kita menginginkan interaksi dengan tabel, maka kita bisa menambahkan getSelectionModel().getSelectedXXX(). Karena dengan menambahkan 2 syntax tersebut, maka program akan mereturn objek yang kita pilih dan dari situ kita dapat mengetahui data mana yang sedang kita pilih.
+
+- how to show selected data from table on the txtNrpDelete
+* Melanjutkan cara dari soal sebelumnya, kita bisa menunjukan data yang kita pilih dengan menggunakan setText pada TextField yang telah kita buat jika kita melihat dari soal pertemuan kali ini. Dengan menambahkan MouseEvent maka setiap cel dari tabel yang kita klik, datanya akan dapat langsung masuk ke dalam textfield yang kita miliki.
+
+- how to delete data selected from table select
+* Jika kita telah memilih data dari list tabel yang ada, maka kita hanya tinggal mencocokan NRP dari student yang dipilih dengan data dari List yang ada lalu kita remove data tersebut dari list yang ada.
+
+- if student has multiple score, and you would like to
+  add delete update score on student what file need to be added
+* kita harus membuat file model baru yaitu model score dimana model score ini merupakan inheritance dari model Student.
+
+- if student has multiple score, and you would like to
+  add delete update score on student what file need to be updated
+* File yang harus diupdate merupakan file controller karena kita ada menambahkan sebuah model score dimana score tersebut merupakan subclass dari Student.
